@@ -24,6 +24,12 @@ void Shader::createFromFiles(const std::string &vertexPath, const std::string &f
 
 void Shader::use() const { glUseProgram(programID); }
 
+int Shader::getUniformLocation(const std::string &name)
+{
+	int uniformLocation = glGetUniformLocation(programID, name.c_str());
+	return uniformLocation;
+}
+
 std::string Shader::readShaderFile(const std::string &filePath)
 {
 	std::ifstream shaderFile(filePath);

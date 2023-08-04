@@ -13,6 +13,8 @@ public:
 	void createFromFiles(const std::string &vertexPath, const std::string &fragmentPath);
 	void use() const;
 
+	int getUniformLocation(const std::string &name);
+
 private:
 	unsigned int programID;
 
