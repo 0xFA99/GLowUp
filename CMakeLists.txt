@@ -11,7 +11,8 @@ find_package(GLEW	REQUIRED)
 set(SOURCE_FILES
 	src/1.CreateWindow.cpp
 	src/2.WindowClearColor.cpp
-	src/3.DrawTriangle.cpp)
+	src/3.DrawTriangle.cpp
+	src/4.IndexBuffers.cpp)
 
 add_library(Shader src/shaders/Shader.cpp)
 
