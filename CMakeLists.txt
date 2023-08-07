@@ -13,7 +13,8 @@ set(SOURCE_FILES
 	src/2.WindowClearColor.cpp
 	src/3.DrawTriangle.cpp
 	src/4.IndexBuffers.cpp
-	src/5.UniformShader.cpp)
+	src/5.UniformShader.cpp
+	src/6.ShaderInterpolation.cpp)
 
 add_library(Shader src/shaders/Shader.cpp)
 
